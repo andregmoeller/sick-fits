@@ -34,7 +34,7 @@ const StyledHeader = styled.header`
         }
     }
     .sub-bar {
-        border-bottom: 1px solid ${props => props.theme.lightgrey};
+        border-bottom: 1px solid ${props => props.theme.lightGrey};
         display: grid;
         grid-template-columns: 1fr auto;
     }
