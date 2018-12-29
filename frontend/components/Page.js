@@ -31,7 +31,7 @@ injectGlobal`
         padding: 0;
     }
     a {
-        text-decoration: 0;
+        text-decoration: none;
         color: ${theme.black};
     }
     html {
