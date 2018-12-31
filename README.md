@@ -10,13 +10,17 @@ The backend of this application uses [Prisma](https://github.com/prisma/prisma) 
 npm i -g prisma
 ```
 
-This will install the Prisma CLI tool.
+This will install the Prisma CLI tool. Then you can run `npm run deploy` to deploy the data model to the Prisma Cloud.
 
 ## Starting the project on your local computer
 
+### Backend
+
+Please go to the directory `backend` and run `npm run dev` to start the project. Then open [http://localhost:4444](http://localhost:4444) in your browser to interact with backend using the [GraphQL Playground](https://github.com/prisma/graphql-playground).
+
 ### Frontend
 
-Please run `npm run dev` to start the project. Open [http://localhost:7777](http://localhost:7777) to view it in the browser.
+Please go to the directory `frontend` and run `npm run dev` to start the project. Open [http://localhost:7777](http://localhost:7777) to view it in the browser.
 
 ## Visual Studio Code Extensions
 
