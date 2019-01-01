@@ -2,7 +2,17 @@
 
 This is a repository I created to accompany my viewing of [Advanced React & GraphQL](https://github.com/wesbos/Advanced-React).
 
-## Setting up prisma
+## Environment Variables
+
+Please go to the directory `backend` and rename the the file `variables.env.sample` to `variables.env`, open the file in an editor and enter the respective information. You will need to change the values for
+
+* PRISMA_ENDPOINT
+* PRISMA_SECRET
+* STRIPE_SECRET
+
+## External services
+
+### Prisma
 
 The backend of this application uses [Prisma](https://github.com/prisma/prisma) as its data layer as well as the [Prisma Cloud](https://www.prisma.io/). Please go to the directory `backend` and run:
 
@@ -10,7 +20,11 @@ The backend of this application uses [Prisma](https://github.com/prisma/prisma) 
 npm i -g prisma
 ```
 
-This will install the Prisma CLI tool. Then you can run `npm run deploy` to deploy the data model to the Prisma Cloud.
+This will install the Prisma CLI tool. Then you can run `npm run deploy` to deploy the data model to the Prisma Cloud. Please configure your 
+
+### Cloudinary
+
+The frontend of this application uses [Cloudinary](https://cloudinary.com/) for uploading and resizing images. After you have signed up to Cloudinary as well as created an 'Upload Preset' called 'sickfits', please change the Cloudinary-URI in the method `uploadFile` of the component `CreateItem`.
 
 ## Starting the project on your local computer
 
