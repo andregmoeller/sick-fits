@@ -9,6 +9,10 @@ Please go to the directory `backend` and rename the the file `variables.env.samp
 * PRISMA_ENDPOINT
 * PRISMA_SECRET
 * STRIPE_SECRET
+* MAIL_HOST
+* MAIL_PORT
+* MAIL_USER
+* MAIL_PASS
 
 ## External services
 
