@@ -17,6 +17,7 @@ type User {
   permissions: [Permission]
   createdAt: DateTime!
   updatedAt: DateTime!
+  cart: [CartItem!]!
 }
 
 type Item {
@@ -29,4 +30,11 @@ type Item {
   user: User!
   createdAt: DateTime!
   updatedAt: DateTime!
+}
+
+type CartItem {
+  id: ID! @unique
+  quantity: Int! @default(value: 1)
+  item: Item!
+  user: User!
 }
