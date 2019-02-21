@@ -30,6 +30,10 @@ This will install the Prisma CLI tool. Then you can run `npm run deploy` to depl
 
 The frontend of this application uses [Cloudinary](https://cloudinary.com/) for uploading and resizing images. After you have signed up to Cloudinary as well as created an 'Upload Preset' called 'sickfits', please change the Cloudinary-URI in the method `uploadFile` of the component `CreateItem`.
 
+### Stripe
+
+This application uses [Stripe](https://stripe.com/) to integrate payment processing. Please take a look at [stripe docs – Testing](https://stripe.com/docs/testing) to learn more about testing your Stripe integration.
+
 ## Starting the project on your local computer
 
 ### Backend
