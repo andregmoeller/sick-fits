@@ -68,3 +68,4 @@ class RemvoeFromCart extends React.Component {
 }
 
 export default RemvoeFromCart;
+export { REMOVE_FROM_CART_MUTATION};
